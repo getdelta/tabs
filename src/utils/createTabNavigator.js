@@ -124,7 +124,7 @@ export default function createTabNavigator(TabView: React.ComponentType<*>) {
           // If current tab has a nested navigator, pop to top
           navigation.dispatch(StackActions.popToTop({ key: route.key }));
         } else {
-          navigation.emit('refocus');
+          // navigation.emit('refocus');
         }
       } else {
         this._jumpTo(route.routeName);
